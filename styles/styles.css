@@ -1,3 +1,9 @@
+body{
+  margin: 0;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 main {
   height: 100%;
   justify-content: center;
@@ -69,21 +75,28 @@ header {
   grid-template-columns: repeat(9, 1fr);
   grid-template-areas: ". . . a b c . . .";
   align-items: center;
-}
-
-header>a:nth-child(1) {
-  grid-area: a;
-  width: 100%;
+ 
 }
 
 header>a:nth-child(2) {
-  grid-area: b;
+  grid-area: a;
   width: 100%;
+  text-decoration: none;
+  color: black;
 }
 
 header>a:nth-child(3) {
+  grid-area: b;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+header>a:nth-child(4) {
   grid-area: c;
   width: 100%;
+  text-decoration: none;
+  color: black;
 }
 
 header>div {
@@ -91,33 +104,53 @@ header>div {
   width: 100%;
   display: flex;
   gap: 20px;
+  align-items: center;
 }
-
-.card{
-  height: auto;
-  border: 1px solid black;
+header>div>a {
+  text-decoration: none;
+  color: black;
+}
+header>img {
+  grid-column: 1 / 2;
+  padding: 5px;
+  
+}
+.main{
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  gap: 200px;
+  margin: 50px 0;
+  border-radius: 20px;
+}
+.card{
+
+  display: flex;
+  width: 95%;
   border-radius: 20px;
   padding: 20px;
   box-sizing: border-box;
   margin: 30px 0;
   gap: 20px;
-}
-.card > img{
-  border: 1px solid black;
-  width: 25%;
-  border-radius: 20px;
-}
-.card > div{
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 10px;
 
+}
+.card > div > img{
+  width: 33%;
+}
+.descriptionProject{
+  width: 30%;
+  background-color: rgb(204, 204, 204);
+  border-radius: 20px;
+  padding: 0px 50px;
+}
+.imgMain{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 .card > div > p{
   font-size: 17px;
-  
 }
 .card > div > p:nth-child(4){
   color: gray;
@@ -132,6 +165,13 @@ header>div {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 600px;
+}
+
+.login>p {
+  font-size: 16px;
+  margin-top: 50px;
+
 }
 
 .loginForm {
@@ -190,3 +230,18 @@ header>div {
 }
 
 #archAndInt:hover~.li {}
+
+footer{
+  padding: 0 15%;
+  display: flex;
+  height: 500px;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div{
+  width: 500px;
+  
+
+}
