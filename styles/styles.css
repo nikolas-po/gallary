@@ -188,3 +188,5 @@ header>div {
   height: 1px;
   background-color: black;
 }
+
+#archAndInt:hover~.li {}
