@@ -1,0 +1,190 @@
+main {
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+main>div>h3 {
+  border-bottom: 3px solid black;
+  display: inline-block;
+}
+
+.imgsList {
+  display: flex;
+  gap: 140px;
+}
+
+.imgsList>img {
+  width: 345px;
+  height: 461px;
+  padding: 0%;
+  margin: 0%;
+}
+
+.zadacha {
+  border-top: 1px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 1px solid black;
+  padding: 10px 10px;
+  border-radius: 10px 10px 20px 20px;
+}
+
+.imgsListResults {
+  border-top: 1px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 1px solid black;
+  padding: 20px 10px;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+
+}
+
+.imgsListResults>img {
+  width: 30%;
+  padding: 0%;
+  margin: 0%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.imgsListResults>img:hover {
+  transform: scale(1.02);
+}
+
+header>div>img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-areas: ". . . a b c . . .";
+  align-items: center;
+}
+
+header>a:nth-child(1) {
+  grid-area: a;
+  width: 100%;
+}
+
+header>a:nth-child(2) {
+  grid-area: b;
+  width: 100%;
+}
+
+header>a:nth-child(3) {
+  grid-area: c;
+  width: 100%;
+}
+
+header>div {
+  grid-column: 9 / 10;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.card{
+  height: auto;
+  border: 1px solid black;
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 30px 0;
+  gap: 20px;
+}
+.card > img{
+  border: 1px solid black;
+  width: 25%;
+  border-radius: 20px;
+}
+.card > div{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+
+}
+.card > div > p{
+  font-size: 17px;
+  
+}
+.card > div > p:nth-child(4){
+  color: gray;
+}
+
+.login {
+  background-color: #d9d9d9;
+  width: 320px;
+  height: auto;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.loginForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  align-items: left;
+  gap: 10px;
+}
+
+.loginForm>input {
+  margin: 10px 0;
+  padding: 10px 5PX;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.login>a {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  margin-top: 50px;
+  width: 120px;
+  border-radius: 15px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.category {
+  display: flex;
+  gap: 10px;
+}
+
+.category>button {
+  font-size: 14px;
+  background: none;
+  border: none;
+  padding: 0px 150px;
+  opacity: 70%;
+}
+
+#vse {
+  opacity: 100%;
+}
+
+.linia {
+  width: 400px;
+  height: 1px;
+  background-color: black;
+}
