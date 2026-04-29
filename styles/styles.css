@@ -198,14 +198,13 @@ header>img {
   padding: 15px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 600px;
 }
 
 .login>p {
   font-size: 16px;
-  margin-top: 50px;
-
 }
 
 .loginForm {
@@ -213,7 +212,6 @@ header>img {
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  align-items: left;
   gap: 10px;
 }
 
