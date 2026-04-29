@@ -5,14 +5,16 @@ main {
   padding: 0;
 }
 
-main>div>h3 {
+main>div>h2 {
   border-bottom: 3px solid black;
   display: inline-block;
+  font-size: 30px;
 }
 
 .imgsList {
   display: flex;
   gap: 140px;
+  justify-content: center;
 }
 
 .imgsList>img {
@@ -46,7 +48,7 @@ main>div>h3 {
 }
 
 .imgsListResults>img {
-  width: 30%;
+  width: 20%;
   padding: 0%;
   margin: 0%;
   object-fit: cover;
@@ -93,7 +95,7 @@ header>div {
   gap: 20px;
 }
 
-.card{
+.card {
   height: auto;
   border: 1px solid black;
   display: flex;
@@ -104,22 +106,26 @@ header>div {
   margin: 30px 0;
   gap: 20px;
 }
-.card > img{
+
+.card>img {
   border: 1px solid black;
   width: 25%;
   border-radius: 20px;
 }
-.card > div{
+
+.card>div {
   border: 1px solid black;
   border-radius: 20px;
   padding: 10px;
 
 }
-.card > div > p{
+
+.card>div>p {
   font-size: 17px;
-  
+
 }
-.card > div > p:nth-child(4){
+
+.card>div>p:nth-child(4) {
   color: gray;
 }
 
@@ -169,14 +175,16 @@ header>div {
 .category {
   display: flex;
   gap: 10px;
+
 }
 
 .category>button {
-  font-size: 14px;
+  font-size: 20px;
   background: none;
   border: none;
   padding: 0px 150px;
   opacity: 70%;
+  width: 100%;
 }
 
 #vse {
@@ -189,4 +197,56 @@ header>div {
   background-color: black;
 }
 
-#archAndInt:hover~.li {}
+.statiaList {
+  width: auto;
+  height: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+}
+
+.statias {
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 20px 30px 20px 30px;
+  font-size: 20px;
+}
+
+.btn-end {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: end;
+}
+
+.dalee {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 20px 30px 20px 30px;
+  width: 150px;
+  height: 30px;
+  margin: 10px;
+
+
+}
+
+.samiComments {
+  width: 100%;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+.comments>input {
+  width: 1692px;
+  height: 45px;
+  background-color: gray;
+  border: none;
+  border-radius: 30px 20px 30px 20px;
+  margin-bottom: 20px;
+}
+
+.comments>p {
+  text-align: center;
+}
