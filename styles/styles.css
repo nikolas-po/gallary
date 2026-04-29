@@ -132,7 +132,7 @@ header>div {
   align-items: center;
 }
 
-header>div>a {
+header a {
   text-decoration: none;
   color: black;
 }
