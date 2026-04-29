@@ -32,7 +32,7 @@ main>div>h3 {
   transition: 0.3s ease;
 }
 
-.imgsList>img:hover{
+.imgsList>img:hover {
   transform: scale(1.02);
 }
 
@@ -86,7 +86,20 @@ header {
   transition: 0.3s ease;
   text-align: center;
 }
-header>a:hover{
+
+header>a:hover {
+  transform: scale(1.05);
+}
+
+header>a:hover {
+  transform: scale(1.05);
+}
+
+header>div>a:hover {
+  transform: scale(1.05);
+}
+
+header>div>img:hover {
   transform: scale(1.05);
 }
 
@@ -239,11 +252,12 @@ header>img {
   border: none;
   padding: 0px 150px;
   opacity: 70%;
-    width: 100%;
-    font-size: 20px;
+  width: 100%;
+  font-size: 20px;
 }
-.category>button:hover{
-      transform: scale(1.02);
+
+.category>button:hover {
+  transform: scale(1.02);
 }
 
 #vse {
@@ -293,9 +307,10 @@ footer div {
   justify-content: end;
 }
 
-.dalee:hover{
+.dalee:hover {
   transform: scale(1.02);
 }
+
 .dalee {
   background: black;
   color: white;
