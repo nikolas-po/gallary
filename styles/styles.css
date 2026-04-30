@@ -198,6 +198,9 @@ header>img {
   flex-wrap: wrap;
   justify-content: center;
 }
+.card>div>img {
+  width: 100%;
+}
  .imgMain {
   width: 100%;
   height: auto;
