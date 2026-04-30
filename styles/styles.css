@@ -170,8 +170,11 @@ header>img {
   width: 400px;
   background-color: rgb(204, 204, 204);
   border-radius: 20px;
-  padding: 0px 50px;
+  padding: 0px 50px 100px;
   gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .imgMain {
@@ -216,6 +219,9 @@ header>img {
   border-radius: 20px;
   padding: 0px 50px;
   gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header{
