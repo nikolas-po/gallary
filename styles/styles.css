@@ -417,8 +417,20 @@ footer div {
     max-width: 345px;
     height: auto;
   }
-
+  .gallary{
+    padding: 10px;
+  }
+  h1{
+    padding: 10px;
+  }
+  .results{
+    padding: 10px ;
+  }
+  .imgsListResults{
+    margin-bottom: 10px;
+  }
   .imgsListResults>img {
+    justify-content: center;
     width: 100%;
   }
 
@@ -481,4 +493,7 @@ footer div {
     transition: 0.3s ease;
 
   }
+.statia{
+  padding: 10px;
+}
 }
