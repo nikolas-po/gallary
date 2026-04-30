@@ -201,6 +201,10 @@ header>img {
     justify-content: center;
   }
 
+  .card>div>img {
+    width: 100%;
+  }
+
   .imgMain {
     width: 100%;
     height: auto;
@@ -209,10 +213,6 @@ header>img {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
-  }
-
-  .card>div>img {
-    width: 100%;
   }
 
   .descriptionProject {
@@ -414,7 +414,6 @@ footer div {
   }
 
   .imgsList>img {
-    width: 100%;
     max-width: 345px;
     height: auto;
   }
@@ -424,7 +423,10 @@ footer div {
   }
 
   .osnovZadachi {
-    width: 100%;
+    padding: 10px;
+  }
+  .zadacha{
+    align-items: center;
   }
 
   .gallary {
