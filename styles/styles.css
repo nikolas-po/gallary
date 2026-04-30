@@ -162,6 +162,7 @@ header>img {
   margin: 30px 0;
   gap: 20px;
 }
+
 .card>div>img {
   width: 32%;
 }
@@ -186,46 +187,54 @@ header>img {
 .card>div>p {
   font-size: 17px;
 }
+
 @media (max-width: 720px) {
   .card {
-  display: flex;
-  width: 100%;
-  border-radius: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-  margin: 30px 0;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
- .imgMain {
-  width: 100%;
-  height: auto;
-  padding: 10px;
-  border-radius: 20px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-} 
-.descriptionProject {
-  width: 100%;
-  background-color: rgb(204, 204, 204);
-  border-radius: 20px;
-  padding: 0px 50px;
-  gap: 20px;
-}
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 30px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-header{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  justify-content: center;
-}
-  header > div{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
+  .imgMain {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card>div>img {
+    width: 100%;
+  }
+
+  .descriptionProject {
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    border-radius: 20px;
+    padding: 0px 50px;
+    gap: 20px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  header>div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
 
 }
 
@@ -395,20 +404,24 @@ footer div {
   text-align: center;
 }
 
-@media (max-width:720px) {
+
+@media (max-width:1080px) {
   .imgsList {
     flex-direction: column;
-    gap: 50px;
-    justify-content: center;
+    gap: 20px;
+    align-items: center;
 
   }
 
   .imgsList>img {
-        width: 100%;  
-      
-    transition: 0.3s ease;
+    width: 100%;
+    max-width: 345px;
+    height: auto;
   }
 
+  .imgsListResults>img {
+    width: 100%;
+  }
 
   .osnovZadachi {
     width: 100%;
@@ -426,6 +439,17 @@ footer div {
     width: 100%;
   }
 
+  .category {
+    flex-wrap: wrap;
+    transition: 0.2s ease;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .category>button {
+    width: auto;
+  }
+
   .comments>input {
     width: 100%;
     height: 45px;
@@ -438,5 +462,21 @@ footer div {
 
   .comments>p {
     text-align: center;
+  }
+
+  .dalee:hover {
+    transform: scale(1.1);
+  }
+
+  .dalee {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px 30px 20px 30px;
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    transition: 0.3s ease;
+
   }
 }
